@@ -16,11 +16,13 @@ for l in source:
     data[key] = value
 
 
-print(data)
-
 app = FastAPI()
 
 
-@app.get("/api/lookup")
-async def lookup():
+@app.get("/api/lookup/oui")
+async def lookup_oui(key: str):
+    return {"message": "Hello World"}
+
+@app.get("/api/lookup/mac")
+async def lookup_mac(key: str):
     return {"message": "Hello World"}
