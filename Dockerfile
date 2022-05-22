@@ -7,7 +7,8 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY ieee-oui-integerated-sort-u.txt ieee-oui-integerated-sort-u.txt
+COPY ieee-oui-integrated.txt ieee-oui-integrated.txt
+COPY config.ini config.ini
 COPY oui_json_lookup.py oui_json_lookup.py
 
 EXPOSE 8000
