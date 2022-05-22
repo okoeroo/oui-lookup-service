@@ -54,7 +54,7 @@ response: `{"value":"Apple, Inc."}`
 ```docker build -t okoeroo/oui-lookup-service:${TAG} .```
 
 ### Run example
-```docker run -dp 8000:8000 oui-lookup-service```
+```docker run -dp 8000:8000 okoeroo/oui-lookup-service:${TAG}```
 
 ### Tag new version
 ```
