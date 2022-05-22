@@ -12336,6 +12336,7 @@
 00C610	Apple, Inc.
 00C88B	Cisco Systems, Inc
 00CAE5	Cisco Systems, Inc
+00CAFE	Xen
 00CB00	Private
 00CB51	Sagemcom Broadband SAS
 00CB7A	Technicolor CH USA Inc.
@@ -19117,6 +19118,7 @@
 50FEF2	Sify Technologies Ltd
 50FF20	Keenetic Limited
 50FF99	IEEE Registration Authority
+525400	QEMU
 540237	Teltronic AG
 540384	Hangkong Nano IC Technologies Co., Ltd
 5403F5	EBN Technology Corp.
