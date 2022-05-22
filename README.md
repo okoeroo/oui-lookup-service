@@ -40,3 +40,10 @@ response: `{"value":"Apple, Inc."}`
 Format: Cisco  
 key: `14109f.000000`  
 response: `{"value":"Apple, Inc."}`  
+
+## Docker
+### Build with
+```docker build -t oui-lookup-service .```
+
+### Run example
+```docker run -dp 8001:8000 oui-lookup-service```
