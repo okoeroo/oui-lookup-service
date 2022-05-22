@@ -37,6 +37,6 @@ Format: Windows
 key: `14-10-9f-00-00-00`  
 response: `{"value":"Apple, Inc."}`  
 
-Format: Cisco
-key: `14109f.000000`
-response: `{"value":"Apple, Inc."}`
+Format: Cisco  
+key: `14109f.000000`  
+response: `{"value":"Apple, Inc."}`  
