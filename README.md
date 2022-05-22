@@ -56,6 +56,32 @@ response: `{"value":"Apple, Inc."}`
 ### Run example
 ```docker run -dp 8000:8000 oui-lookup-service```
 
+### Tag new version
+```
+LOCAL_IMAGE="oui-lookup-service"
+REPO_NAME="oui-lookup-service"
+TAG=<version>
+
+git commit -a -m "<text>"
+git tag "${TAG}"
+git push --tags
+
+docker tag ${LOCAL_IMAGE}:${TAG} okoeroo/${REPO_NAME}:${TAG}
+```
+
+## #Publish new version
+```
+LOCAL_IMAGE="oui-lookup-service"
+REPO_NAME="oui-lookup-service"
+TAG=<version>
+
+git tag "${TAG}"
+git push --tags
+
+docker tag ${LOCAL_IMAGE}:${TAG} okoeroo/${REPO_NAME}:${TAG}
+docker push okoeroo/${REPO_NAME}:${TAG}
+```
+
 ## Benchmark
 ```bash
 ab -c 50 -n 5000 "hacktic.koeroo.lan:8000/api/oui-lookup/mac?key=14109f.000000"
