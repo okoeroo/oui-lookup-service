@@ -66,7 +66,7 @@ git commit -a -m "<text>"
 git tag "${TAG}"
 git push --tags
 
-docker tag ${LOCAL_IMAGE}:${TAG} okoeroo/${REPO_NAME}:${TAG}
+docker build -t okoeroo/oui-lookup-service:${TAG} .
 ```
 
 ## #Publish new version
@@ -81,7 +81,7 @@ TAG=<version>
 git tag "${TAG}"
 git push --tags
 
-docker tag ${LOCAL_IMAGE}:${TAG} okoeroo/${REPO_NAME}:${TAG}
+docker build -t okoeroo/oui-lookup-service:${TAG} .
 docker push okoeroo/${REPO_NAME}:${TAG}
 ```
 
