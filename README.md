@@ -7,11 +7,11 @@ The REST API with JSON reply can be integrated in Graylog using two Data Adapter
 ## Data Adapter for OUI based lookups
 This adapter will accept six octets and will only search for these most significant 6 octets of the MAC address.
 
-### Configuration
-Type: use HTTP JSONPath
-Lookup URL: `http://example.lan:8000/api/oui-lookup/oui?key=${key}`
-Single value JSONPath: `$.value`
-Multi value JSONPath: n/a
+### Configuration  
+Type: use HTTP JSONPath  
+Lookup URL: `http://example.lan:8000/api/oui-lookup/oui?key=${key}`  
+Single value JSONPath: `$.value`  
+Multi value JSONPath: n/a  
 
 ### Example data:  
 key: `14109f`  
