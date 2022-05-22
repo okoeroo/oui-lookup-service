@@ -51,7 +51,7 @@ response: `{"value":"Apple, Inc."}`
 
 ## Docker
 ### Build with
-```docker build -t oui-lookup-service .```
+```docker build -t okoeroo/oui-lookup-service:${TAG} .```
 
 ### Run example
 ```docker run -dp 8000:8000 oui-lookup-service```
@@ -70,6 +70,9 @@ docker tag ${LOCAL_IMAGE}:${TAG} okoeroo/${REPO_NAME}:${TAG}
 ```
 
 ## #Publish new version
+Note 1: don't forget `docker login -u okoeroo`
+Note 2: Use key per host
+
 ```
 LOCAL_IMAGE="oui-lookup-service"
 REPO_NAME="oui-lookup-service"
